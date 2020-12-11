@@ -11,3 +11,19 @@ function toggleSidebar() {
   );
   sidebarContentOverlay.classList.toggle('hidden');
 }
+
+function toggleEmailList() {
+  const emailList = document.getElementById('js--emailList');
+  emailList.classList.toggle('hidden');
+  emailList.classList.toggle('flex');
+
+  const openEmailListButton = document.getElementById(
+    'js--emailList-open-button',
+  );
+  openEmailListButton.classList.toggle('hidden');
+
+  const closeEmailListButton = document.getElementById(
+    'js--emailList-close-button',
+  );
+  closeEmailListButton.classList.toggle('hidden');
+}
