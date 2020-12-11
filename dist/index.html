@@ -317,7 +317,7 @@
         <main class="flex flex-1 bg-gray-200">
           <!-- email list -->
           <div
-            class="flex flex-col flex-grow w-full max-w-xs border-l border-r"
+            class="relative flex flex-col flex-grow w-full max-w-xs bg-gray-200 border-l border-r"
           >
             <div
               class="flex items-center justify-between flex-shrink-0 px-4 py-2 border-b"
@@ -469,9 +469,9 @@
           </div>
           <!-- != email list -->
           <!-- email preview -->
-          <div class="flex-1">
+          <div class="flex flex-col flex-1 w-0">
             <!-- section top bar -->
-            <div>
+            <div class="relative flex-shrink-0 shadow-md">
               <!-- icons bar -->
               <div
                 class="flex items-center justify-between px-5 py-4 bg-gray-100 border-b"
@@ -602,16 +602,129 @@
               </div>
               <!-- != icons bar -->
               <!-- title bar -->
-              <div></div>
+              <div class="flex items-center justify-between px-5 py-4 bg-white">
+                <h3 class="text-xl text-gray-900 truncate">
+                  Re: Student discount?
+                </h3>
+                <div class="flex-shrink-0 ml-4">
+                  <span class="">#1428</span>
+                  <span
+                    class="px-2 py-1 ml-3 text-sm font-semibold leading-none text-green-900 bg-green-200 rounded-full"
+                    >Active</span
+                  >
+                </div>
+              </div>
               <!-- != title bar -->
             </div>
             <!-- != section top bar -->
             <!-- email content -->
-            <div>
-              <article></article>
-              <article></article>
-              <article></article>
-              <article></article>
+            <div class="flex-1 p-3 overflow-y-auto">
+              <!-- one message in email -->
+              <article class="px-10 pt-6 pb-8 bg-white rounded-lg shadow">
+                <div class="flex items-center justify-between">
+                  <p class="text-lg font-semibold">
+                    <span class="text-gray-900">Joe Armstrong</span>
+                    <span class="text-gray-600">wrote</span>
+                  </p>
+                  <div class="flex items-center">
+                    <span class="text-sm text-gray-600">
+                      Yesterday at 7:24 AM
+                    </span>
+                    <img
+                      class="object-cover ml-5 rounded-full h-9 w-9"
+                      src="img/avatar_1.png"
+                      alt=""
+                    />
+                  </div>
+                </div>
+                <div class="mt-6 text-sm text-gray-800">
+                  <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Labore id quibusdam quaerat consectetur, facilis provident
+                    hic iusto! In, a corrupti!
+                  </p>
+                </div>
+              </article>
+              <!-- != one message in email -->
+              <!-- one message in email -->
+              <article class="px-10 pt-6 pb-8 mt-3 bg-white rounded-lg shadow">
+                <div class="flex items-center justify-between">
+                  <p class="text-lg font-semibold">
+                    <span class="text-gray-900">Monica White</span>
+                    <span class="text-gray-600">replied</span>
+                  </p>
+                  <div class="flex items-center">
+                    <span class="text-sm text-gray-600">
+                      Yesterday at 10:09 AM
+                    </span>
+                    <img
+                      class="object-cover ml-5 rounded-full h-9 w-9"
+                      src="img/avatar_5.png"
+                      alt=""
+                    />
+                  </div>
+                </div>
+                <div class="mt-6 text-sm text-gray-800">
+                  <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Labore id quibusdam quaerat consectetur, facilis provident
+                    hic iusto! In, a corrupti!
+                  </p>
+                  <p class="mt-4">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Labore id quibusdam quaerat consectetur, facilis provident
+                    hic iusto! In, a corrupti!
+                  </p>
+                  <p class="mt-4">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Labore id quibusdam quaerat consectetur, facilis provident
+                    hic iusto! In, a corrupti!
+                  </p>
+                  <p class="mt-4 font-semibold text-gray-900">Monica White</p>
+                  <p>Customer Support</p>
+                </div>
+              </article>
+              <!-- != one message in email -->
+              <!-- one message in email -->
+              <article class="px-10 pt-6 pb-8 mt-3 bg-white rounded-lg shadow">
+                <div class="flex items-center justify-between">
+                  <p class="text-lg font-semibold">
+                    <span class="text-gray-900">Joe Armstrong</span>
+                    <span class="text-gray-600">wrote</span>
+                  </p>
+                  <div class="flex items-center">
+                    <span class="text-sm text-gray-600">
+                      Yesterday at 7:24 AM
+                    </span>
+                    <img
+                      class="object-cover ml-5 rounded-full h-9 w-9"
+                      src="img/avatar_1.png"
+                      alt=""
+                    />
+                  </div>
+                </div>
+                <div class="mt-6 text-sm text-gray-800">
+                  <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Dolorum dolores odit, excepturi deleniti consequuntur
+                    blanditiis adipisci. Culpa vero temporibus porro, eius
+                    nesciunt autem quaerat ipsam error quae unde odit saepe
+                    mollitia fugiat aspernatur commodi in aliquam natus, tenetur
+                    possimus veniam excepturi ratione voluptate. Quas rem saepe
+                    velit, soluta odio corporis.
+                  </p>
+                  <p class="mt-4">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Dolorum dolores odit, excepturi deleniti consequuntur
+                    blanditiis adipisci. Culpa vero temporibus porro, eius
+                    nesciunt autem quaerat ipsam error quae unde odit saepe
+                    mollitia fugiat aspernatur commodi in aliquam natus, tenetur
+                    possimus veniam excepturi ratione voluptate. Quas rem saepe
+                    velit, soluta odio corporis.
+                  </p>
+                </div>
+              </article>
+              <!-- != one message in email -->
             </div>
             <!-- != email content -->
           </div>
